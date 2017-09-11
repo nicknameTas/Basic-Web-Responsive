@@ -1,0 +1,127 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background: #efefef;
+    /*#efefef*/
+    line-height: 170%;
+    height: 100%;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: black;
+    /* size box bar */
+    padding: 5px 0;
+    font-size: 1.1em;
+    border: 0;
+}
+
+.navbar-brand {
+    float: left;
+    min-height: 55px;
+    padding: 2 15px 5px;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 50px;
+    height: 50px;
+    padding-top: 0;
+}
+
+
+/* Set color font in navbar */
+
+.navbar-inverse .navbar-nav li a {
+    color: #D5D5D5;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn {
+    font-size: 18px;
+    color: #FFF;
+    padding: 9px 20px;
+    background: black;
+    border: 2px solid #FFF;
+}
+
+
+/* Size in box div container */
+
+.container {
+    margin: 4% auto;
+    position: relative;
+    padding: 25px;
+}
+
+#icon {
+    max-width: 200px;
+    margin: 1% auto;
+}
+
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none;
+    }
+    #icon {
+        max-width: 150px;
+    }
+    h2 {
+        font-size: 1.7em;
+    }
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    color: #FFF;
+}
+
+.parallax {
+    /* The image used */
+    opacity: 0.8;
+    background-image: url('../picture/img_parallax.jpg');
+    /* Full height */
+    height: 70%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax1 {
+    /* The image used */
+    opacity: 0.8;
+    background-image: url('../picture/img_parallax1.jpg');
+    /* Full height */
+    height: 70%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+
+.di {
+    background-color: white;
+    width: 170px;
+    height: 170px;
+    padding: 60px;
+    margin: 0px;
+    color: black;
+    border: 5px solid black;
+}
