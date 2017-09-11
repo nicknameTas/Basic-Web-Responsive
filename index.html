@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=0">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css" />
+    <script src="js/scrollTo.js"></script>
+    <style>
+        * {
+            font-family: 'Kanit', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar use bootstrap -->
+    <nav class="navbar navbar-inverse  navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header" role="banner">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                <a class="navbar-brand" href="#" style="color: #FFF;">LOGO</a>
+            </div>
+            <div data-toggle="collapse" data-target="#myNavbar" class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#page-1" class="js-scrollTo">Home</a></li>
+                    <li><a href="#page-2" class="js-scrollTo">About</a></li>
+                    <li><a href="#page-3" class="js-scrollTo">Portfolio</a></li>
+                    <li><a href="#page-4" class="js-scrollTo">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav  navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Slider -->
+    <div id="myCarousel" class="carousel slide" data-rides="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox" id="page-1">
+            <div class="item active">
+                <img src="picture/background_slide.jpg">
+                <div class="carousel-caption">
+                    <br>
+                    <br>
+                    <br>
+                    <h1>Welcome to the website.</h1>
+                    <br>
+                    <button type="button" class="btn btn-default"><a href="#page-2" class="js-scrollTo"> Get Started </a> </button>
+                </div>
+            </div>
+            <!-- End Active -->
+            <div class="item">
+                <img src="picture/background_slide2.jpg">
+            </div>
+            <div class="item">
+                <img src="picture/background_slide3.jpg">
+            </div>
+        </div>
+        <!-- start slider -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Provious</span>
+        </a>
+
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- End slider -->
+
+    <!--about -->
+    <div class="container text-center" id="page-2">
+        <h2> Language and Framework used for web design. </h2>
+        <div class="row ">
+            <br>
+            <div data-aos="fade-right" data-aos-delay="250" class="col-sm-3">
+                <img src="picture/html5.png" id="icon">
+                <h4>HTML5</h4>
+            </div>
+            <div data-aos="fade-right" data-aos-delay="500" class="col-sm-3">
+                <img src="picture/css3.png" id="icon">
+                <h4>CSS3</h4>
+            </div>
+            <div data-aos="fade-right" data-aos-delay="750" class="col-sm-3">
+                <img src="picture/js.png" id="icon">
+                <h4>JavaScript</h4>
+            </div>
+            <div data-aos="fade-right" data-aos-delay="1000" class="col-sm-3">
+                <img src="picture/bootstrap.png" id="icon">
+                <h4>Bootstrap</h4>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 style="color:DarkSlateBlue ;">Bootstrap</h2>
+                <p>Build responsive, mobile-first projects on the web with the world's most popular front-end component library.
+                </p>
+                <p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins
+                    built on jQuery.</p>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="1050" class="col-md-6">
+                <img src="picture/bootstrap2.jpg" class="img-responsive ">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h2><a href="#hidden" data-toggle="collapse" style="color:red;">HTML5</a></h2>
+                <div id="hidden" class="collapse">
+                    <p>HTML5 is the latest version of Hypertext Markup Language, the code that describes web pages.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h2 style="color:blue;"><a href="#hidden1" data-toggle="collapse">CSS3</a></h2>
+                <div id="hidden1" class="collapse">
+                    <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h2><a href="#hidden2" data-toggle="collapse" style="color:#DAA520;">JavaScript</a></h2>
+                <div id="hidden2" class="collapse">
+                    <p>JavaScript is a programming language used to make web pages interactive.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End about -->
+
+    <!-- Portfolio -->
+    <div class="parallax">
+    </div>
+    <div class="wrap " id="page-3">
+        <div class="container">
+            <div class="row">
+                <div data-aos="zoom-in-up" class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+                    <img src="picture/nitas.jpg" class="img-circle  img-responsive" style="border: 1px solid; color:black">
+                </div>
+                <div class="col-md-8">
+                    <h2>Hello.</h2>
+                    <h4>My name is Nitas Srisanoi, I am a basic Front-end web developer. </h4>
+                    <h4>I'm student and I studied at Rajamangala University of Technology Srivijaya. Branch computer engineering. </h4>
+                    <h2>Technology Skills.</h2>
+                    <h4>Programming/Language: HTML, JavaScript, CSS, PHP, C</h4>
+                    <h4>Framework: Ionic, Bootstrap </h4>
+                    <h4>Office: MS Word, PowerPoint, Visio </h4>
+                    <h4>Operating Systems: Windows 7/8.1/10 ,Linux OS Ubuntu </h4>
+                    <h4>Graphic Program: Adobe illustrator </h4>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <h2>Portfolio</h2>
+            </div>
+            <br>
+            <br>
+            <br>
+            <!-- Responsive Grid. Four columns on tablets, laptops and desktops.-->
+            <div class="w3-row-padding w3-center">
+                <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="150" data-aos-offset="0" class="w3-col m3 img-rounded ">
+                    <img src="picture/app.jpg" style="width:100%">
+                </div>
+
+                <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" class="w3-col m3 img-rounded ">
+                    <img src="picture/app1.jpg" style="width:100%">
+                </div>
+
+                <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="600" data-aos-offset="0" class="w3-col m3 img-rounded ">
+                    <img src="picture/app2.jpg" style="width:100%">
+                </div>
+
+                <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="900" data-aos-offset="0" class="w3-col m3 img-rounded ">
+                    <img src="picture/web.jpg" style="width:100%">
+                </div>
+            </div>
+
+            <div class="w3-row-padding w3-center w3-section">
+                <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="1200" data-aos-offset="0" class="w3-col m3 img-rounded">
+                    <img src="picture/web1.jpg" style="width:100%">
+                </div>
+                <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="1500" data-aos-offset="0" class="w3-col m3 img-rounded">
+                    <img src="picture/web2.jpg" style="width:100%">
+                </div>
+                <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="1800" data-aos-offset="0" class="w3-col m3 img-rounded">
+                    <img src="picture/graphic.jpg" style="width:100%">
+                </div>
+
+                <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="2100" data-aos-offset="0" class="w3-col m3">
+                    <img src="picture/graphic1.jpg" style="width:100%">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- End Portfolio -->
+
+    <div class="parallax1">
+    </div>
+
+    <!-- The Contact Section -->
+    <div class="w3-container w3-content w3-padding-64" id="page-4">
+        <h2 class="text-center">CONTACT</h2>
+        <div class="w3-row w3-padding-32">
+            <div class="w3-col m6 w3-large w3-margin-bottom" style="color:black">
+                <i class="fa fa-map-marker" style="width:30px; color:black;"></i><span style="padding:10px;">Pattani , TH</span><br>
+                <i class="fa fa-phone" style="width:30px; color:black;"></i><span style="padding:10px;">Phone: 0831684232</span><br>
+                <i class="fa fa-envelope" style="width:30px; color:black;"> </i><span style="padding:15px;">Email: mypza2010@hotmail.com</span><br>
+            </div>
+            <br>
+            <div class="w3-col m6">
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                    <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End contact -->
+
+    <footer class="container-fluid text-center" style=" background-color: black;  color: #FFF;">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Connect</h3>
+                <a href="#"> </a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <div class="col-sm-8">
+                <h3>Thanks w3schools and bootstrap for library and Framework.</h3>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
